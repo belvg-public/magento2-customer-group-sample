@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="tax_class_show" xsi:type="object">
+                    BelVG\CustomerGroupCLI\Console\Command\TaxClassShowCommand
+                </item>
+                <item name="tax_class_create" xsi:type="object">
+                    BelVG\CustomerGroupCLI\Console\Command\TaxClassCreateCommand
+                </item>
+                <item name="customer_group_create" xsi:type="object">
+                    BelVG\CustomerGroupCLI\Console\Command\CustomerGroupCreateCommand
+                </item>
+                <item name="customer_group_delete" xsi:type="object">
+                    BelVG\CustomerGroupCLI\Console\Command\CustomerGroupDeleteCommand
+                </item>
+                <item name="customer_assign_group" xsi:type="object">
+                    BelVG\CustomerGroupCLI\Console\Command\CustomerAssignGroupCommand
+                </item>
+                <item name="product_set_tier_price" xsi:type="object">
+                    BelVG\CustomerGroupCLI\Console\Command\ProductSetTierPriceCommand
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>
